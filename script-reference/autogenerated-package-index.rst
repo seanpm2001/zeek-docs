@@ -369,9 +369,6 @@
 :doc:`builtin-plugins </scripts/builtin-plugins/index>`
 
 
-:doc:`builtin-plugins/Zeek_AF_Packet </scripts/builtin-plugins/Zeek_AF_Packet/index>`
-
-
 :doc:`zeekygen </scripts/zeekygen/index>`
 
    This package is loaded during the process which automatically generates
