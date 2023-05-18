@@ -308,7 +308,7 @@ Events
    .. zeek:see:: set_contents_file get_contents_file
 
 .. zeek:id:: new_connection_contents
-   :source-code: base/bif/plugins/Zeek_TCP.events.bif.zeek 17 17
+   :source-code: policy/frameworks/spicy/record-spicy-batch.zeek 50 53
 
    :Type: :zeek:type:`event` (c: :zeek:type:`connection`)
 
@@ -348,7 +348,7 @@ Events
    
 
 .. zeek:id:: tcp_contents
-   :source-code: base/bif/plugins/Zeek_TCP.events.bif.zeek 319 319
+   :source-code: policy/frameworks/spicy/record-spicy-batch.zeek 55 60
 
    :Type: :zeek:type:`event` (c: :zeek:type:`connection`, is_orig: :zeek:type:`bool`, seq: :zeek:type:`count`, contents: :zeek:type:`string`)
 

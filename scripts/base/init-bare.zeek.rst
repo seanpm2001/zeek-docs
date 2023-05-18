@@ -38,7 +38,7 @@ base/init-bare.zeek
 
 
 :Namespaces: Analyzer, BinPAC, Cluster, DCE_RPC, DHCP, FTP, GLOBAL, JSON, KRB, MOUNT3, MQTT, NCP, NFS3, NTLM, NTP, PE, Pcap, RADIUS, RDP, Reporter, SMB, SMB1, SMB2, SNMP, SOCKS, SSH, SSL, TCP, Threading, Tunnel, UnknownProtocol, Weird, X509
-:Imports: :doc:`base/bif/CPP-load.bif.zeek </scripts/base/bif/CPP-load.bif.zeek>`, :doc:`base/bif/communityid.bif.zeek </scripts/base/bif/communityid.bif.zeek>`, :doc:`base/bif/const.bif.zeek </scripts/base/bif/const.bif.zeek>`, :doc:`base/bif/event.bif.zeek </scripts/base/bif/event.bif.zeek>`, :doc:`base/bif/option.bif.zeek </scripts/base/bif/option.bif.zeek>`, :doc:`base/bif/packet_analysis.bif.zeek </scripts/base/bif/packet_analysis.bif.zeek>`, :doc:`base/bif/plugins/Zeek_KRB.types.bif.zeek </scripts/base/bif/plugins/Zeek_KRB.types.bif.zeek>`, :doc:`base/bif/plugins/Zeek_SNMP.types.bif.zeek </scripts/base/bif/plugins/Zeek_SNMP.types.bif.zeek>`, :doc:`base/bif/reporter.bif.zeek </scripts/base/bif/reporter.bif.zeek>`, :doc:`base/bif/stats.bif.zeek </scripts/base/bif/stats.bif.zeek>`, :doc:`base/bif/strings.bif.zeek </scripts/base/bif/strings.bif.zeek>`, :doc:`base/bif/supervisor.bif.zeek </scripts/base/bif/supervisor.bif.zeek>`, :doc:`base/bif/types.bif.zeek </scripts/base/bif/types.bif.zeek>`, :doc:`base/bif/zeek.bif.zeek </scripts/base/bif/zeek.bif.zeek>`, :doc:`base/frameworks/supervisor/api.zeek </scripts/base/frameworks/supervisor/api.zeek>`, :doc:`base/packet-protocols </scripts/base/packet-protocols/index>`
+:Imports: :doc:`base/bif/CPP-load.bif.zeek </scripts/base/bif/CPP-load.bif.zeek>`, :doc:`base/bif/communityid.bif.zeek </scripts/base/bif/communityid.bif.zeek>`, :doc:`base/bif/const.bif.zeek </scripts/base/bif/const.bif.zeek>`, :doc:`base/bif/event.bif.zeek </scripts/base/bif/event.bif.zeek>`, :doc:`base/bif/option.bif.zeek </scripts/base/bif/option.bif.zeek>`, :doc:`base/bif/packet_analysis.bif.zeek </scripts/base/bif/packet_analysis.bif.zeek>`, :doc:`base/bif/plugins/Zeek_KRB.types.bif.zeek </scripts/base/bif/plugins/Zeek_KRB.types.bif.zeek>`, :doc:`base/bif/plugins/Zeek_SNMP.types.bif.zeek </scripts/base/bif/plugins/Zeek_SNMP.types.bif.zeek>`, :doc:`base/bif/reporter.bif.zeek </scripts/base/bif/reporter.bif.zeek>`, :doc:`base/bif/stats.bif.zeek </scripts/base/bif/stats.bif.zeek>`, :doc:`base/bif/strings.bif.zeek </scripts/base/bif/strings.bif.zeek>`, :doc:`base/bif/supervisor.bif.zeek </scripts/base/bif/supervisor.bif.zeek>`, :doc:`base/bif/types.bif.zeek </scripts/base/bif/types.bif.zeek>`, :doc:`base/bif/zeek.bif.zeek </scripts/base/bif/zeek.bif.zeek>`, :doc:`base/frameworks/spicy/init-bare.zeek </scripts/base/frameworks/spicy/init-bare.zeek>`, :doc:`base/frameworks/supervisor/api.zeek </scripts/base/frameworks/supervisor/api.zeek>`, :doc:`base/packet-protocols </scripts/base/packet-protocols/index>`
 
 Summary
 ~~~~~~~
@@ -2181,6 +2181,12 @@ Redefinable Options
    :Type: :zeek:type:`bool`
    :Attributes: :zeek:attr:`&redef`
    :Default: ``F``
+   :Redefinition: from :doc:`/scripts/policy/frameworks/spicy/record-spicy-batch.zeek`
+
+      ``=``::
+
+         T
+
 
    If true, all TCP originator-side traffic is reported via
    :zeek:see:`tcp_contents`.
@@ -2196,6 +2202,12 @@ Redefinable Options
    :Type: :zeek:type:`bool`
    :Attributes: :zeek:attr:`&redef`
    :Default: ``F``
+   :Redefinition: from :doc:`/scripts/policy/frameworks/spicy/record-spicy-batch.zeek`
+
+      ``=``::
+
+         T
+
 
    If true, all TCP responder-side traffic is reported via
    :zeek:see:`tcp_contents`.
@@ -2419,6 +2431,12 @@ Redefinable Options
    :Type: :zeek:type:`bool`
    :Attributes: :zeek:attr:`&redef`
    :Default: ``F``
+   :Redefinition: from :doc:`/scripts/policy/frameworks/spicy/record-spicy-batch.zeek`
+
+      ``=``::
+
+         T
+
 
    If true, all UDP originator-side traffic is reported via
    :zeek:see:`udp_contents`.
@@ -2436,6 +2454,12 @@ Redefinable Options
    :Type: :zeek:type:`bool`
    :Attributes: :zeek:attr:`&redef`
    :Default: ``F``
+   :Redefinition: from :doc:`/scripts/policy/frameworks/spicy/record-spicy-batch.zeek`
+
+      ``=``::
+
+         T
+
 
    If true, all UDP responder-side traffic is reported via
    :zeek:see:`udp_contents`.

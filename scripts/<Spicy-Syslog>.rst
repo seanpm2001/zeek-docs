@@ -1,11 +1,9 @@
 :tocdepth: 3
 
-base/bif/plugins/Zeek_Syslog.events.bif.zeek
-============================================
-.. zeek:namespace:: GLOBAL
+<Spicy-Syslog>
+==============
 
 
-:Namespace: GLOBAL
 
 Summary
 ~~~~~~~
@@ -21,7 +19,7 @@ Detailed Interface
 Events
 ######
 .. zeek:id:: syslog_message
-   :source-code: base/bif/plugins/Zeek_Syslog.events.bif.zeek 20 20
+   :source-code: <Spicy-Syslog> 0 0
 
    :Type: :zeek:type:`event` (c: :zeek:type:`connection`, facility: :zeek:type:`count`, severity: :zeek:type:`count`, msg: :zeek:type:`string`)
 
@@ -42,7 +40,6 @@ Events
 
    :param msg: The message logged.
    
-   .. note:: Zeek currently parses only UDP syslog traffic. Support for TCP
-      syslog will be added soon.
+   .. note:: Zeek currently parses only UDP syslog traffic.
 
 

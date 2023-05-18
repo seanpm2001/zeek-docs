@@ -1,11 +1,9 @@
 :tocdepth: 3
 
-base/bif/plugins/Zeek_Finger.events.bif.zeek
-============================================
-.. zeek:namespace:: GLOBAL
+<Spicy-Finger>
+==============
 
 
-:Namespace: GLOBAL
 
 Summary
 ~~~~~~~
@@ -22,7 +20,7 @@ Detailed Interface
 Events
 ######
 .. zeek:id:: finger_reply
-   :source-code: base/bif/plugins/Zeek_Finger.events.bif.zeek 41 41
+   :source-code: <Spicy-Finger> 0 0
 
    :Type: :zeek:type:`event` (c: :zeek:type:`connection`, reply_line: :zeek:type:`string`)
 
@@ -38,14 +36,9 @@ Events
    :param reply_line: The reply as returned by the server
    
    .. zeek:see:: finger_request
-   
-   .. todo:: Zeek's current default configuration does not activate the protocol
-      analyzer that generates this event; the corresponding script has not yet
-      been ported. To still enable this event, one needs to
-      register a port for it or add a DPD payload signature.
 
 .. zeek:id:: finger_request
-   :source-code: base/bif/plugins/Zeek_Finger.events.bif.zeek 23 23
+   :source-code: <Spicy-Finger> 0 0
 
    :Type: :zeek:type:`event` (c: :zeek:type:`connection`, full: :zeek:type:`bool`, username: :zeek:type:`string`, hostname: :zeek:type:`string`)
 
@@ -67,10 +60,5 @@ Events
    :param hostname: The request's host name.
    
    .. zeek:see:: finger_reply
-   
-   .. todo:: Zeek's current default configuration does not activate the protocol
-      analyzer that generates this event; the corresponding script has not yet
-      been ported. To still enable this event, one needs to
-      register a port for it or add a DPD payload signature.
 
 

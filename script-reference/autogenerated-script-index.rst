@@ -2,6 +2,8 @@
    :maxdepth: 1
 
    base/init-bare.zeek </scripts/base/init-bare.zeek>
+   <Spicy-Finger> </scripts/<Spicy-Finger>>
+   <Spicy-Syslog> </scripts/<Spicy-Syslog>>
    base/bif/const.bif.zeek </scripts/base/bif/const.bif.zeek>
    base/bif/types.bif.zeek </scripts/base/bif/types.bif.zeek>
    base/bif/zeek.bif.zeek </scripts/base/bif/zeek.bif.zeek>
@@ -85,6 +87,7 @@
    base/packet-protocols/gtpv1/__load__.zeek </scripts/base/packet-protocols/gtpv1/__load__.zeek>
    base/packet-protocols/gtpv1/main.zeek </scripts/base/packet-protocols/gtpv1/main.zeek>
    base/bif/plugins/Zeek_GTPv1.functions.bif.zeek </scripts/base/bif/plugins/Zeek_GTPv1.functions.bif.zeek>
+   base/frameworks/spicy/init-bare.zeek </scripts/base/frameworks/spicy/init-bare.zeek>
    builtin-plugins/__preload__.zeek </scripts/builtin-plugins/__preload__.zeek>
    base/init-frameworks-and-bifs.zeek </scripts/base/init-frameworks-and-bifs.zeek>
    base/frameworks/logging/__load__.zeek </scripts/base/frameworks/logging/__load__.zeek>
@@ -141,6 +144,7 @@
    base/bif/bloom-filter.bif.zeek </scripts/base/bif/bloom-filter.bif.zeek>
    base/bif/cardinality-counter.bif.zeek </scripts/base/bif/cardinality-counter.bif.zeek>
    base/bif/top-k.bif.zeek </scripts/base/bif/top-k.bif.zeek>
+   base/bif/spicy.bif.zeek </scripts/base/bif/spicy.bif.zeek>
    base/bif/plugins/__load__.zeek </scripts/base/bif/plugins/__load__.zeek>
    base/bif/plugins/Zeek_BitTorrent.events.bif.zeek </scripts/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek>
    base/bif/plugins/Zeek_ConnSize.events.bif.zeek </scripts/base/bif/plugins/Zeek_ConnSize.events.bif.zeek>
@@ -153,7 +157,6 @@
    base/bif/plugins/Zeek_DNP3.events.bif.zeek </scripts/base/bif/plugins/Zeek_DNP3.events.bif.zeek>
    base/bif/plugins/Zeek_DNS.events.bif.zeek </scripts/base/bif/plugins/Zeek_DNS.events.bif.zeek>
    base/bif/plugins/Zeek_File.events.bif.zeek </scripts/base/bif/plugins/Zeek_File.events.bif.zeek>
-   base/bif/plugins/Zeek_Finger.events.bif.zeek </scripts/base/bif/plugins/Zeek_Finger.events.bif.zeek>
    base/bif/plugins/Zeek_FTP.events.bif.zeek </scripts/base/bif/plugins/Zeek_FTP.events.bif.zeek>
    base/bif/plugins/Zeek_FTP.functions.bif.zeek </scripts/base/bif/plugins/Zeek_FTP.functions.bif.zeek>
    base/bif/plugins/Zeek_Gnutella.events.bif.zeek </scripts/base/bif/plugins/Zeek_Gnutella.events.bif.zeek>
@@ -229,7 +232,6 @@
    base/bif/plugins/Zeek_SSL.events.bif.zeek </scripts/base/bif/plugins/Zeek_SSL.events.bif.zeek>
    base/bif/plugins/Zeek_SSL.functions.bif.zeek </scripts/base/bif/plugins/Zeek_SSL.functions.bif.zeek>
    base/bif/plugins/Zeek_SSL.consts.bif.zeek </scripts/base/bif/plugins/Zeek_SSL.consts.bif.zeek>
-   base/bif/plugins/Zeek_Syslog.events.bif.zeek </scripts/base/bif/plugins/Zeek_Syslog.events.bif.zeek>
    base/bif/plugins/Zeek_TCP.events.bif.zeek </scripts/base/bif/plugins/Zeek_TCP.events.bif.zeek>
    base/bif/plugins/Zeek_TCP.types.bif.zeek </scripts/base/bif/plugins/Zeek_TCP.types.bif.zeek>
    base/bif/plugins/Zeek_TCP.functions.bif.zeek </scripts/base/bif/plugins/Zeek_TCP.functions.bif.zeek>
@@ -259,7 +261,11 @@
    base/bif/plugins/Zeek_AsciiWriter.ascii.bif.zeek </scripts/base/bif/plugins/Zeek_AsciiWriter.ascii.bif.zeek>
    base/bif/plugins/Zeek_NoneWriter.none.bif.zeek </scripts/base/bif/plugins/Zeek_NoneWriter.none.bif.zeek>
    base/bif/plugins/Zeek_SQLiteWriter.sqlite.bif.zeek </scripts/base/bif/plugins/Zeek_SQLiteWriter.sqlite.bif.zeek>
-   base/bif/plugins/Zeek_AF_Packet.af_packet.bif.zeek </scripts/base/bif/plugins/Zeek_AF_Packet.af_packet.bif.zeek>
+   base/frameworks/spicy/init-framework.zeek </scripts/base/frameworks/spicy/init-framework.zeek>
+   base/misc/version.zeek </scripts/base/misc/version.zeek>
+   base/frameworks/reporter/__load__.zeek </scripts/base/frameworks/reporter/__load__.zeek>
+   base/frameworks/reporter/main.zeek </scripts/base/frameworks/reporter/main.zeek>
+   base/utils/strings.zeek </scripts/base/utils/strings.zeek>
    base/init-default.zeek </scripts/base/init-default.zeek>
    base/utils/active-http.zeek </scripts/base/utils/active-http.zeek>
    base/utils/exec.zeek </scripts/base/utils/exec.zeek>
@@ -267,8 +273,6 @@
    base/utils/backtrace.zeek </scripts/base/utils/backtrace.zeek>
    base/utils/conn-ids.zeek </scripts/base/utils/conn-ids.zeek>
    base/utils/dir.zeek </scripts/base/utils/dir.zeek>
-   base/frameworks/reporter/__load__.zeek </scripts/base/frameworks/reporter/__load__.zeek>
-   base/frameworks/reporter/main.zeek </scripts/base/frameworks/reporter/main.zeek>
    base/utils/paths.zeek </scripts/base/utils/paths.zeek>
    base/utils/directions-and-hosts.zeek </scripts/base/utils/directions-and-hosts.zeek>
    base/utils/email.zeek </scripts/base/utils/email.zeek>
@@ -276,7 +280,6 @@
    base/utils/geoip-distance.zeek </scripts/base/utils/geoip-distance.zeek>
    base/utils/numbers.zeek </scripts/base/utils/numbers.zeek>
    base/utils/queue.zeek </scripts/base/utils/queue.zeek>
-   base/utils/strings.zeek </scripts/base/utils/strings.zeek>
    base/utils/thresholds.zeek </scripts/base/utils/thresholds.zeek>
    base/utils/time.zeek </scripts/base/utils/time.zeek>
    base/utils/urls.zeek </scripts/base/utils/urls.zeek>
@@ -340,7 +343,8 @@
    base/frameworks/netcontrol/non-cluster.zeek </scripts/base/frameworks/netcontrol/non-cluster.zeek>
    base/frameworks/telemetry/__load__.zeek </scripts/base/frameworks/telemetry/__load__.zeek>
    base/frameworks/telemetry/main.zeek </scripts/base/frameworks/telemetry/main.zeek>
-   base/misc/version.zeek </scripts/base/misc/version.zeek>
+   base/frameworks/spicy/__load__.zeek </scripts/base/frameworks/spicy/__load__.zeek>
+   base/frameworks/spicy/main.zeek </scripts/base/frameworks/spicy/main.zeek>
    base/protocols/conn/__load__.zeek </scripts/base/protocols/conn/__load__.zeek>
    base/protocols/conn/main.zeek </scripts/base/protocols/conn/main.zeek>
    base/protocols/conn/contents.zeek </scripts/base/protocols/conn/contents.zeek>
@@ -456,8 +460,6 @@
    base/misc/find-filtered-trace.zeek </scripts/base/misc/find-filtered-trace.zeek>
    base/misc/installation.zeek </scripts/base/misc/installation.zeek>
    builtin-plugins/__load__.zeek </scripts/builtin-plugins/__load__.zeek>
-   builtin-plugins/Zeek_AF_Packet/__load__.zeek </scripts/builtin-plugins/Zeek_AF_Packet/__load__.zeek>
-   builtin-plugins/Zeek_AF_Packet/init.zeek </scripts/builtin-plugins/Zeek_AF_Packet/init.zeek>
    zeekygen/__load__.zeek </scripts/zeekygen/__load__.zeek>
    test-all-policy.zeek </scripts/test-all-policy.zeek>
    policy/frameworks/cluster/experimental.zeek </scripts/policy/frameworks/cluster/experimental.zeek>
@@ -596,4 +598,6 @@
    policy/frameworks/files/extract-all-files.zeek </scripts/policy/frameworks/files/extract-all-files.zeek>
    policy/misc/dump-events.zeek </scripts/policy/misc/dump-events.zeek>
    policy/protocols/conn/speculative-service.zeek </scripts/policy/protocols/conn/speculative-service.zeek>
+   policy/frameworks/spicy/record-spicy-batch.zeek </scripts/policy/frameworks/spicy/record-spicy-batch.zeek>
+   policy/frameworks/spicy/resource-usage.zeek </scripts/policy/frameworks/spicy/resource-usage.zeek>
    zeekygen/example.zeek </scripts/zeekygen/example.zeek>

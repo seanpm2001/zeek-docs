@@ -21,9 +21,18 @@ File Analyzers
 
       .. zeek:enum:: Files::ANALYZER_OCSP_REPLY Files::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: Files::ANALYZER_OCSP_REQUEST Files::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: Files::ANALYZER_X509 Files::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
 .. _plugin-zeek-filedataevent:
 

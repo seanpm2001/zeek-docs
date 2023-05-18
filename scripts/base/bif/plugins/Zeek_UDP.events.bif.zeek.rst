@@ -25,7 +25,7 @@ Detailed Interface
 Events
 ######
 .. zeek:id:: udp_contents
-   :source-code: base/bif/plugins/Zeek_UDP.events.bif.zeek 43 43
+   :source-code: policy/frameworks/spicy/record-spicy-batch.zeek 67 75
 
    :Type: :zeek:type:`event` (u: :zeek:type:`connection`, is_orig: :zeek:type:`bool`, contents: :zeek:type:`string`)
 

@@ -221,6 +221,9 @@
 :doc:`base/frameworks/telemetry </scripts/base/frameworks/telemetry/index>`
 
 
+:doc:`base/frameworks/spicy </scripts/base/frameworks/spicy/index>`
+
+
 :doc:`base/protocols/conn </scripts/base/protocols/conn/index>`
 
    Support for connection (TCP, UDP, or ICMP) analysis.
@@ -367,9 +370,6 @@
    Support for extracting files with the file analysis framework.
 
 :doc:`builtin-plugins </scripts/builtin-plugins/index>`
-
-
-:doc:`builtin-plugins/Zeek_AF_Packet </scripts/builtin-plugins/Zeek_AF_Packet/index>`
 
 
 :doc:`zeekygen </scripts/zeekygen/index>`

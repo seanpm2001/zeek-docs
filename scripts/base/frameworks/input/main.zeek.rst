@@ -348,6 +348,9 @@ Types
 
       .. zeek:enum:: Input::READER_SQLITE Input::Reader
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
 
 Events
 ######

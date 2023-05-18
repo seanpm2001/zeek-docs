@@ -57,15 +57,33 @@ Packet Analyzers
 
       .. zeek:enum:: PacketAnalyzer::ANALYZER_TCP PacketAnalyzer::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: PacketAnalyzer::ANALYZER_TEREDO PacketAnalyzer::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
       .. zeek:enum:: PacketAnalyzer::ANALYZER_UDP PacketAnalyzer::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: PacketAnalyzer::ANALYZER_VLAN PacketAnalyzer::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
       .. zeek:enum:: PacketAnalyzer::ANALYZER_VNTAG PacketAnalyzer::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: PacketAnalyzer::ANALYZER_VXLAN PacketAnalyzer::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
 .. _plugin-zeek-arp:
 

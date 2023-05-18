@@ -25,8 +25,6 @@ Protocol Analyzers
 
       .. zeek:enum:: Analyzer::ANALYZER_FTP_DATA Analyzer::Tag
 
-      .. zeek:enum:: Analyzer::ANALYZER_FINGER Analyzer::Tag
-
       .. zeek:enum:: Analyzer::ANALYZER_FTP Analyzer::Tag
 
       .. zeek:enum:: Analyzer::ANALYZER_FTP_ADAT Analyzer::Tag
@@ -119,27 +117,65 @@ Protocol Analyzers
 
       .. zeek:enum:: Analyzer::ANALYZER_SOCKS Analyzer::Tag
 
-      .. zeek:enum:: Analyzer::ANALYZER_SSH Analyzer::Tag
+      .. zeek:enum:: Analyzer::ANALYZER_FINGER Analyzer::Tag
 
-      .. zeek:enum:: Analyzer::ANALYZER_DTLS Analyzer::Tag
+         (present if :doc:`/scripts/<Spicy-Finger>` is loaded)
 
-      .. zeek:enum:: Analyzer::ANALYZER_SSL Analyzer::Tag
 
       .. zeek:enum:: Analyzer::ANALYZER_SYSLOG Analyzer::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
+      .. zeek:enum:: Analyzer::ANALYZER_SSH Analyzer::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
+      .. zeek:enum:: Analyzer::ANALYZER_DTLS Analyzer::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
+      .. zeek:enum:: Analyzer::ANALYZER_SSL Analyzer::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: Analyzer::ANALYZER_CONTENTLINE Analyzer::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
       .. zeek:enum:: Analyzer::ANALYZER_CONTENTS Analyzer::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: Analyzer::ANALYZER_TCPSTATS Analyzer::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
       .. zeek:enum:: Analyzer::ANALYZER_TCP Analyzer::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: Analyzer::ANALYZER_UDP Analyzer::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
       .. zeek:enum:: Analyzer::ANALYZER_XMPP Analyzer::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: Analyzer::ANALYZER_ZIP Analyzer::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
 .. zeek:type:: AllAnalyzers::Tag
 
@@ -184,8 +220,6 @@ Protocol Analyzers
       .. zeek:enum:: AllAnalyzers::FILES_ANALYZER_SHA1 AllAnalyzers::Tag
 
       .. zeek:enum:: AllAnalyzers::FILES_ANALYZER_SHA256 AllAnalyzers::Tag
-
-      .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_FINGER AllAnalyzers::Tag
 
       .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_FTP AllAnalyzers::Tag
 
@@ -323,45 +357,110 @@ Protocol Analyzers
 
       .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_SOCKS AllAnalyzers::Tag
 
-      .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_SSH AllAnalyzers::Tag
+      .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_FINGER AllAnalyzers::Tag
 
-      .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_DTLS AllAnalyzers::Tag
+         (present if :doc:`/scripts/<Spicy-Finger>` is loaded)
 
-      .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_SSL AllAnalyzers::Tag
 
       .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_SYSLOG AllAnalyzers::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
+      .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_SSH AllAnalyzers::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
+      .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_DTLS AllAnalyzers::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
+      .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_SSL AllAnalyzers::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_CONTENTLINE AllAnalyzers::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
       .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_CONTENTS AllAnalyzers::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_TCPSTATS AllAnalyzers::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
       .. zeek:enum:: AllAnalyzers::PACKETANALYZER_ANALYZER_TCP AllAnalyzers::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_TCP AllAnalyzers::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
       .. zeek:enum:: AllAnalyzers::PACKETANALYZER_ANALYZER_TEREDO AllAnalyzers::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: AllAnalyzers::PACKETANALYZER_ANALYZER_UDP AllAnalyzers::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
       .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_UDP AllAnalyzers::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: AllAnalyzers::PACKETANALYZER_ANALYZER_VLAN AllAnalyzers::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
       .. zeek:enum:: AllAnalyzers::PACKETANALYZER_ANALYZER_VNTAG AllAnalyzers::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: AllAnalyzers::PACKETANALYZER_ANALYZER_VXLAN AllAnalyzers::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
       .. zeek:enum:: AllAnalyzers::FILES_ANALYZER_OCSP_REPLY AllAnalyzers::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: AllAnalyzers::FILES_ANALYZER_OCSP_REQUEST AllAnalyzers::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
       .. zeek:enum:: AllAnalyzers::FILES_ANALYZER_X509 AllAnalyzers::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_XMPP AllAnalyzers::Tag
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
       .. zeek:enum:: AllAnalyzers::ANALYZER_ANALYZER_ZIP AllAnalyzers::Tag
+
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
 
 .. _plugin-zeek-bittorrent:
 
@@ -3108,73 +3207,6 @@ Events
 
    :param mime_type: MIME type of the file or "<unknown>" if no file magic signatures
               matched.
-
-.. _plugin-zeek-finger:
-
-Zeek::Finger
-------------
-
-Finger analyzer
-
-Components
-++++++++++
-
-:zeek:enum:`Analyzer::ANALYZER_FINGER`
-
-Events
-++++++
-
-.. zeek:id:: finger_request
-   :source-code: base/bif/plugins/Zeek_Finger.events.bif.zeek 23 23
-
-   :Type: :zeek:type:`event` (c: :zeek:type:`connection`, full: :zeek:type:`bool`, username: :zeek:type:`string`, hostname: :zeek:type:`string`)
-
-   Generated for Finger requests.
-   
-   See `Wikipedia <http://en.wikipedia.org/wiki/Finger_protocol>`__ for more
-   information about the Finger protocol.
-   
-
-   :param c: The connection.
-   
-
-   :param full: True if verbose information is requested (``/W`` switch).
-   
-
-   :param username: The request's user name.
-   
-
-   :param hostname: The request's host name.
-   
-   .. zeek:see:: finger_reply
-   
-   .. todo:: Zeek's current default configuration does not activate the protocol
-      analyzer that generates this event; the corresponding script has not yet
-      been ported. To still enable this event, one needs to
-      register a port for it or add a DPD payload signature.
-
-.. zeek:id:: finger_reply
-   :source-code: base/bif/plugins/Zeek_Finger.events.bif.zeek 41 41
-
-   :Type: :zeek:type:`event` (c: :zeek:type:`connection`, reply_line: :zeek:type:`string`)
-
-   Generated for Finger replies.
-   
-   See `Wikipedia <http://en.wikipedia.org/wiki/Finger_protocol>`__ for more
-   information about the Finger protocol.
-   
-
-   :param c: The connection.
-   
-
-   :param reply_line: The reply as returned by the server
-   
-   .. zeek:see:: finger_request
-   
-   .. todo:: Zeek's current default configuration does not activate the protocol
-      analyzer that generates this event; the corresponding script has not yet
-      been ported. To still enable this event, one needs to
-      register a port for it or add a DPD payload signature.
 
 .. _plugin-zeek-ftp:
 
@@ -14099,6 +14131,20 @@ Events
 
    :param code: The response code for the attempted login.
 
+.. _plugin-zeek-spicy:
+
+Zeek::Spicy
+-----------
+
+Support for Spicy parsers (*.hlto)
+
+Components
+++++++++++
+
+:zeek:enum:`Analyzer::ANALYZER_FINGER`
+
+:zeek:enum:`Analyzer::ANALYZER_SYSLOG`
+
 .. _plugin-zeek-ssh:
 
 Zeek::SSH
@@ -15743,46 +15789,6 @@ Functions
    
    .. zeek:see:: ssl_certificate_request
 
-.. _plugin-zeek-syslog:
-
-Zeek::Syslog
-------------
-
-Syslog analyzer UDP-only
-
-Components
-++++++++++
-
-:zeek:enum:`Analyzer::ANALYZER_SYSLOG`
-
-Events
-++++++
-
-.. zeek:id:: syslog_message
-   :source-code: base/bif/plugins/Zeek_Syslog.events.bif.zeek 20 20
-
-   :Type: :zeek:type:`event` (c: :zeek:type:`connection`, facility: :zeek:type:`count`, severity: :zeek:type:`count`, msg: :zeek:type:`string`)
-
-   Generated for monitored Syslog messages.
-   
-   See `Wikipedia <http://en.wikipedia.org/wiki/Syslog>`__ for more
-   information about the Syslog protocol.
-   
-
-   :param c: The connection record for the underlying transport-layer session/flow.
-   
-
-   :param facility: The "facility" included in the message.
-   
-
-   :param severity: The "severity" included in the message.
-   
-
-   :param msg: The message logged.
-   
-   .. note:: Zeek currently parses only UDP syslog traffic. Support for TCP
-      syslog will be added soon.
-
 .. _plugin-zeek-tcp:
 
 Zeek::TCP
@@ -15857,7 +15863,7 @@ Events
 ++++++
 
 .. zeek:id:: new_connection_contents
-   :source-code: base/bif/plugins/Zeek_TCP.events.bif.zeek 17 17
+   :source-code: policy/frameworks/spicy/record-spicy-batch.zeek 50 53
 
    :Type: :zeek:type:`event` (c: :zeek:type:`connection`)
 
@@ -16218,7 +16224,7 @@ Events
    .. zeek:see:: tcp_packet tcp_contents tcp_rexmit tcp_option
 
 .. zeek:id:: tcp_contents
-   :source-code: base/bif/plugins/Zeek_TCP.events.bif.zeek 319 319
+   :source-code: policy/frameworks/spicy/record-spicy-batch.zeek 55 60
 
    :Type: :zeek:type:`event` (c: :zeek:type:`connection`, is_orig: :zeek:type:`bool`, seq: :zeek:type:`count`, contents: :zeek:type:`string`)
 

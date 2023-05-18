@@ -1121,6 +1121,9 @@ Types
 
       .. zeek:enum:: Log::WRITER_SQLITE Log::Writer
 
+         (present if :doc:`/scripts/<Spicy-Syslog>` is loaded)
+
+
 
 Events
 ######
