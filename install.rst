@@ -26,11 +26,12 @@ FreeBSD and OpenBSD, or build Zeek yourself.
 Docker Images
 =============
 
-We provide official Docker images on Docker Hub at https://hub.docker.com/u/zeek
+We provide official Docker images on Docker Hub at https://hub.docker.com/u/zeek.
 
     * For the latest feature release: ``docker pull zeek/zeek:latest``
     * For the latest LTS release: ``docker pull zeek/zeek:lts``
-    * For a specific release: ``docker pull zeek/zeek:5.0.0-rc1``
+    * For the latest release in a given series: ``docker pull zeek/zeek:5.2``
+    * For a specific release: ``docker pull zeek/zeek:6.0.0``
     * For the nightly build: ``docker pull zeek/zeek-dev:latest``
 
 Additionally, we push these images to Amazon's Public Elastic Container
@@ -71,19 +72,18 @@ as usual.
 
 We provide packages for:
 
-    * the `latest Zeek feature release <https://software.opensuse.org/download.html?project=security%3Azeek&package=zeek>`_ (`sources <https://build.opensuse.org/package/show/security:zeek/zeek>`__)
-    * the `latest Zeek LTS release <https://software.opensuse.org/download.html?project=security%3Azeek&package=zeek-lts>`_ (`sources <https://build.opensuse.org/package/show/security:zeek/zeek-lts>`__)
+    * specific release lines, currently `5.0.x <https://software.opensuse.org/download.html?project=security%3Azeek&package=zeek-5.0>`_ (`sources <https://build.opensuse.org/package/show/security:zeek/zeek-5.0>`__) and `6.0.x <https://software.opensuse.org/download.html?project=security%3Azeek&package=zeek-6.0>`_ (`sources <https://build.opensuse.org/package/show/security:zeek/zeek-6.0>`__)
     * `nightly builds <https://software.opensuse.org/download.html?project=security%3Azeek&package=zeek-nightly>`_ (`sources <https://build.opensuse.org/package/show/security:zeek/zeek-nightly>`__)
     * `release candidates <https://software.opensuse.org/download.html?project=security%3Azeek&package=zeek-rc>`_ (`sources <https://build.opensuse.org/package/show/security:zeek/zeek-rc>`__)
 
-For example, for the Zeek LTS release on Ubuntu 22.04 the steps look as follows:
+For example, for the latest Zeek 6.0.x release on Ubuntu 22.04 the steps look as follows:
 
   .. code-block:: console
 
      echo 'deb http://download.opensuse.org/repositories/security:/zeek/xUbuntu_22.04/ /' | sudo tee /etc/apt/sources.list.d/security:zeek.list
      curl -fsSL https://download.opensuse.org/repositories/security:zeek/xUbuntu_22.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/security_zeek.gpg > /dev/null
      sudo apt update
-     sudo apt install zeek-lts
+     sudo apt install zeek-6.0
 
 The primary install prefix for binary packages is :file:`/opt/zeek` (depending
 on which version you’re using), and includes a complete Zeek environment with
@@ -91,6 +91,13 @@ on which version you’re using), and includes a complete Zeek environment with
 
 See our `Binary Packages wiki page <https://github.com/zeek/zeek/wiki/Binary-Packages>`_
 for the latest updates on binary releases.
+
+.. note:: In the past we also provided packages always referring to the latest
+   feature and LTS releases (``zeek`` and ``zeek-lts``, respectively). These
+   remain visible on OBS but are no longer supported, since they proved confusing
+   and potentially dangerous to users. A switch from, say, 5.0.x to 6.0.x as a
+   consequence of the Zeek project moving to a new LTS train should never happen
+   transparently for most users. Explicit version numbers avoid such surprises.
 
 macOS
 -----
